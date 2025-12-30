@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode overrides */
+.dark .react-calendar-heatmap .color-empty {
+  fill: #1e293b;
+}
+
+.dark .react-calendar-heatmap .color-scale-1 {
+  fill: #ef4444;
+}
+
+.dark .react-calendar-heatmap .color-scale-4 {
+  fill: #22c55e;
+}
+
+/* Heatmap cell spacing */
+.react-calendar-heatmap rect {
+  rx: 2;
+  ry: 2;
+  shape-rendering: geometricPrecision;
+}
+
+/* Add spacing illusion */
+.react-calendar-heatmap .color-empty,
+.react-calendar-heatmap .color-scale-1,
+.react-calendar-heatmap .color-scale-2,
+.react-calendar-heatmap .color-scale-3,
+.react-calendar-heatmap .color-scale-4 {
+  stroke: white;
+  stroke-width: 1.5px;
+}
+
+/* Dark mode spacing */
+.dark .react-calendar-heatmap .color-empty,
+.dark .react-calendar-heatmap .color-scale-1,
+.dark .react-calendar-heatmap .color-scale-2,
+.dark .react-calendar-heatmap .color-scale-3,
+.dark .react-calendar-heatmap .color-scale-4 {
+  stroke: #020617;
+}
+
+
+/* LIGHT MODE COLORS */
+.react-calendar-heatmap .color-empty {
+  fill: #f1f5f9; /* light gray */
+}
+
+.react-calendar-heatmap .color-scale-1 {
+  fill: #fee2e2;
+}
+
+.react-calendar-heatmap .color-scale-2 {
+  fill: #ed843f;
+}
+
+.react-calendar-heatmap .color-scale-3 {
+  fill: #f87171;
+}
+
+.react-calendar-heatmap .color-scale-4 {
+  fill: #29ae29;
+}
